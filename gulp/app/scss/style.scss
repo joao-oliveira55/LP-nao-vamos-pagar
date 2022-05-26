@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap&family=Archivo+Black&display=swapfamily=Archivo+Black&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main section{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+main .banner-top img{
+    width: 100%;
+}
+
+main .banner-top .desktop{
+    display: none;
+}
+
+main .banner-top a{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .banner-top svg{
+    max-width: 400px;
+    width: 80%;
+    margin: 35px auto;
+}
+main .section-content {
+    width: 90%;
+}
+
+main .section-content h1{
+    font-family: 'Archivo Black', sans-serif;
+    margin: 20px 0;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #043190;
+}
+
+main .section-content p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+footer{
+    background-color: #043190;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer div h2{
+    font-family: 'Nunito', sans-serif;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+footer div .logo svg{
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+}
+
+footer div .logo img{
+    width: 130px;
+    margin: 0 10px;
+}
+
+main .section-form {
+    margin-top: 50px;
+}
+main .section-form .title-form{
+    width: 80%;
+    margin: 0 auto; 
+    color: white;
+    background-color: #043190;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+main .section-form .title-form h2{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+.mauticform-label{
+    font-family: 'Nunito', sans-serif;
+}
+.mauticform-errormsg{
+    font-family: 'Open Sans', sans-serif;
+}
+.mauticform-checkboxgrp-label{
+    font-family: 'Open Sans', sans-serif;
+}
+.mauticform_wrapper{
+    width: 90%;
+}
+#mauticform_input_formularionaovamospagarnada_submit{
+    color: white;
+    width: 100%;
+    background-color: #043190;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}  
+.mauticform-selectbox, .mauticform-input, .mauticform-textarea{
+    font-size: 1rem;
+    color: #000 !important;
+    height: 40px !important;
+}  
+
+.mauticform-selectbox:focus, .mauticform-input:focus, .mauticform-textarea:focus{
+    outline: none;
+}
+
+.mauticform-message {
+    position: absolute;
+    margin-bottom: 10px;
+    color: green;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-family: 'Nunito',sans-serif;   
+}
+#mauticform_wrapper_formularionaovamospagarnada form{
+    padding-bottom: 35px;
+    position: relative;
+}
+
+/* ----------- form -------------- */
+
+@media only screen and (min-width: 700px) {
+    main .banner-top .desktop{
+        display: block;
+    }
+
+    main .banner-top .mobile{
+        display: none;
+    }
+    
+    #mauticform_wrapper_formularionaovamospagarnada{
+        max-width: 100%;
+        width: 80% ;
+    }
+    
+    #mauticform_wrapper_formularionaovamospagarnada form{
+        width: 100%;   
+    }
+    
+    #mauticform_formularionaovamospagarnada_estado{
+        grid-area: estado;
+    }
+    
+    #mauticform_formularionaovamospagarnada_cidade{
+        grid-area: cidade;
+    }   
+    
+    #mauticform_formularionaovamospagarnada_nome{
+        grid-area: nome;
+    }
+    
+    #mauticform_formularionaovamospagarnada_sobrenome{
+        grid-area: sobrenome;
+    }
+    
+    #mauticform_formularionaovamospagarnada_whatsapp{
+        grid-area: whats;
+    }
+    
+    #mauticform_formularionaovamospagarnada_email{
+        grid-area: email;
+    }
+    
+    #mauticform_formularionaovamospagarnada_instituicao_de_ensino{
+        grid-area: ensino;
+    }
+    
+    #mauticform_formularionaovamospagarnada_aceito_receber_informacoe{
+        grid-area: aceito;
+    }
+    #mauticform_formularionaovamospagarnada_submit{ 
+        grid-area: enviar;
+    }
+    #mauticform_wrapper_formularionaovamospagarnada form .mauticform-page-wrapper.mauticform-page-1{
+        display: grid !important;
+        grid-template-areas:
+        'estado estado estado cidade cidade  cidade '
+        'nome nome nome sobrenome sobrenome sobrenome'
+        'whats whats email email email email'
+        'ensino ensino ensino ensino ensino ensino'
+        'aceito aceito aceito aceito aceito aceito '
+        'enviar enviar enviar enviar enviar enviar ';
+    }
+    
+    .mauticform-selectbox, .mauticform-input, .mauticform-textarea{
+        width: 98% !important;
+    }
+    
+    footer{
+        flex-direction: row;
+    }
+    
+}
